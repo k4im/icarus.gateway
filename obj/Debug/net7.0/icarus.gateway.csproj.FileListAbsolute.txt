@@ -40,3 +40,4 @@
 /home/oem/github/icarus/icarus.gateway/obj/Debug/net7.0/icarus.gateway.pdb
 /home/oem/github/icarus/icarus.gateway/obj/Debug/net7.0/icarus.gateway.genruntimeconfig.cache
 /home/oem/github/icarus/icarus.gateway/obj/Debug/net7.0/ref/icarus.gateway.dll
+/home/oem/github/icarus/icarus.gateway/bin/Debug/net7.0/ocelot.Development.json
