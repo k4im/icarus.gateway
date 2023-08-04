@@ -1,0 +1,18 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Projeto/projetos/{pagina}/{resultadoPorPagina}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "localhost",
+                "Port": 5086
+              }
+            ],
+            "UpstreamPathTemplate": "/projetos/{pagina}/{resultadoPorPagina}",
+            "UpstreamHttpMethod": [ "Get", "Options" ]
+        }
+    ],
+    "GlobalConfiguration": {}
+}
+
