@@ -9,5 +9,4 @@ public static class Collections
         services.AddOcelot(configuration);
         return services;
     }
-
 }
