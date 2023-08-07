@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
+RUN apt update -y && apt install curl -y
+
+WORKDIR /App
+# Copy everything
+COPY . ./
+# Restore as distinct layers
+RUN dotnet restore
+# Build and publish a release
+RUN dotnet publish -c Release -o out
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /App
+COPY --from=build-env /App/out .
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 CMD [ "curl --fail http://localhost/health" ]
+ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]

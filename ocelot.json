@@ -5,7 +5,7 @@
           "DownstreamScheme": "http",
           "DownstreamHostAndPorts": [
             {
-              "Host": "localhost",
+              "Host": "icarusprojetos",
               "Port": 5086
             }
           ],
@@ -17,7 +17,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "localhost",
+            "Host" : "icarusprojetos",
             "Port" : 5086
           }
         ],
@@ -29,7 +29,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "localhost",
+            "Host" : "icarusprojetos",
             "Port" : 5086
           }
         ],
@@ -42,7 +42,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "localhost",
+            "Host" : "icarusprojetos",
             "Port" : 5086
           }
         ],
@@ -54,7 +54,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "localhost",
+            "Host" : "icarusprojetos",
             "Port" : 5086
           }
         ],

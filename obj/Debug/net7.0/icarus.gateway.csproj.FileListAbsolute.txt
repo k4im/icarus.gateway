@@ -41,3 +41,13 @@
 /home/oem/github/icarus/icarus.gateway/obj/Debug/net7.0/icarus.gateway.genruntimeconfig.cache
 /home/oem/github/icarus/icarus.gateway/obj/Debug/net7.0/ref/icarus.gateway.dll
 /home/oem/github/icarus/icarus.gateway/bin/Debug/net7.0/ocelot.Development.json
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.csproj.AssemblyReference.cache
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.AssemblyInfoInputs.cache
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.AssemblyInfo.cs
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.csproj.CoreCompileInputs.cache
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.dll
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\refint\icarus.gateway.dll
+C:\Users\santo\github\icarus-sistema\icarus.gateway\obj\Debug\net7.0\icarus.gateway.pdb

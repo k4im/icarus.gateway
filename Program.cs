@@ -1,11 +1,6 @@
-using Ocelot.DependencyInjection;
-using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
-IConfiguration configuration = new ConfigurationBuilder()
-                            .AddJsonFile($"ocelot.{builder.Configuration["ASPNETCORE_ENVIRONMENT"]}.json")
-                            .Build();
-builder.Services.AddOcelot(configuration);
+builder.Services.AddOcelotConfigurations(builder.Configuration);
 
 var app = builder.Build();
 app.UseOcelot().Wait();
