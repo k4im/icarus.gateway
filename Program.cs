@@ -1,6 +1,6 @@
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOcelotConfigurations(builder.Configuration);
+builder.Services.AddJWtConfigurations(builder.Configuration);
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();

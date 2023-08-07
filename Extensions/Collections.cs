@@ -1,6 +1,3 @@
-using System.Text;
-using Microsoft.IdentityModel.Tokens;
-
 namespace icarus.gateway.Extensions;
 public static class Collections
 {
