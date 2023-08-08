@@ -1239,24 +1239,27 @@
     ]
   },
   "packageFolders": {
-    "/home/oem/.nuget/packages/": {}
+    "C:\\Users\\santo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oem/github/icarus/icarus.gateway/icarus.gateway.csproj",
+      "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.gateway\\icarus.gateway.csproj",
       "projectName": "icarus.gateway",
-      "projectPath": "/home/oem/github/icarus/icarus.gateway/icarus.gateway.csproj",
-      "packagesPath": "/home/oem/.nuget/packages/",
-      "outputPath": "/home/oem/github/icarus/icarus.gateway/obj/",
+      "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.gateway\\icarus.gateway.csproj",
+      "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.gateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/oem/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1311,7 +1314,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

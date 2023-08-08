@@ -83,7 +83,7 @@
         }
     ],
     "GlobalConfiguration": {
-      "RequestIdKey": "X-Correlation-ID"
+      "RequestIdKey": "X-CorrelationID"
     }
 }
 
