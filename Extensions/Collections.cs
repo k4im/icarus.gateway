@@ -1,6 +1,7 @@
 namespace icarus.gateway.Extensions;
 public static class Collections
 {
+    /*Realizado adição de configuração de ocelot para gateway*/
     public static IServiceCollection AddOcelotConfigurations(this IServiceCollection services, IConfiguration config)
     {
         var configuration = new ConfigurationBuilder()
