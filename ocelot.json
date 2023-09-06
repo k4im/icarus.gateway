@@ -5,7 +5,7 @@
           "DownstreamScheme": "http",
           "DownstreamHostAndPorts": [
             {
-              "Host": "icarusprojetos",
+              "Host": "projetos",
               "Port": 5086
             }
           ],
@@ -17,7 +17,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "icarusprojetos",
+            "Host" : "projetos",
             "Port" : 5086
           }
         ],
@@ -29,7 +29,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "icarusprojetos",
+            "Host" : "projetos",
             "Port" : 5086
           }
         ],
@@ -42,7 +42,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "icarusprojetos",
+            "Host" : "projetos",
             "Port" : 5086
           }
         ],
@@ -54,7 +54,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "icarusprojetos",
+            "Host" : "projetos",
             "Port" : 5086
           }
         ],
@@ -66,7 +66,7 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "icarusprojetos",
+            "Host" : "projetos",
             "Port" : 5086
           }
         ],
@@ -78,13 +78,74 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host" : "icarusprojetos",
+            "Host" : "projetos",
             "Port" : 5086
           }
         ],
         "UpstreamPathTemplate" : "/projeto/pesquisar/{pagina}/{resultadoPorPagina}",
         "UpstreamHttpMethod" : ["Get", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/produtos/{pagina}/{resultadoPorPagina}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "estoque",
+            "Port" : 5139
+          }
+        ],
+        "UpstreamPathTemplate" : "/produtos/{pagina}/{resultadoPorPagina}",
+        "UpstreamHttpMethod" : ["Get", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/produtos/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "estoque",
+            "Port" : 5139
+          }
+        ],
+        "UpstreamPathTemplate" : "/produtos/{id}",
+        "UpstreamHttpMethod" : ["Get", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/produtos/novo_produto",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "estoque",
+            "Port" : 5139
+          }
+        ],
+        "UpstreamPathTemplate" : "/produtos/novo",
+        "UpstreamHttpMethod" : ["Post", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/produtos/produto_atualizar/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "estoque",
+            "Port" : 5139
+          }
+        ],
+        "UpstreamPathTemplate" : "/produtos/atualizar/{id}",
+        "UpstreamHttpMethod" : ["Put", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/produtos/produto_delete/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "estoque",
+            "Port" : 5139
+          }
+        ],
+        "UpstreamPathTemplate" : "/produtos/delete/{id}",
+        "UpstreamHttpMethod" : ["Delete", "Options" ]
       }
+      
   ],
   "GlobalConfiguration": {
     "RequestIdKey": "X-CorrelationID"
