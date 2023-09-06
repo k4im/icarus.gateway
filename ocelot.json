@@ -144,6 +144,78 @@
         ],
         "UpstreamPathTemplate" : "/produtos/delete/{id}",
         "UpstreamHttpMethod" : ["Delete", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/usuarios/{pagina}/{resultado}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "autenticacao",
+            "Port" : 5112
+          }
+        ],
+        "UpstreamPathTemplate" : "/auth/usuarios/{pagina}/{resultado}",
+        "UpstreamHttpMethod" : ["Get", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/usuarios/novo",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "autenticacao",
+            "Port" : 5112
+          }
+        ],
+        "UpstreamPathTemplate" : "/auth/usuarios/novo",
+        "UpstreamHttpMethod" : ["Post", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/usuarios/desativar/{chave}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "autenticacao",
+            "Port" : 5112
+          }
+        ],
+        "UpstreamPathTemplate" : "/auth/desativar/{chave}",
+        "UpstreamHttpMethod" : ["Post", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/usuarios/login",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "autenticacao",
+            "Port" : 5112
+          }
+        ],
+        "UpstreamPathTemplate" : "/auth/login",
+        "UpstreamHttpMethod" : ["Post", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/usuarios/reativar/{chave}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "autenticacao",
+            "Port" : 5112
+          }
+        ],
+        "UpstreamPathTemplate" : "/auth/reativar/{chave}",
+        "UpstreamHttpMethod" : ["Post", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/usuarios/logout",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "autenticacao",
+            "Port" : 5112
+          }
+        ],
+        "UpstreamPathTemplate" : "/auth/logout",
+        "UpstreamHttpMethod" : ["Post", "Options" ]
       }
       
   ],
