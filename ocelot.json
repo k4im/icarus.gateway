@@ -1,7 +1,7 @@
 {
   "Routes": [
       {
-          "DownstreamPathTemplate": "/api/Projeto/projetos/{pagina}/{resultadoPorPagina}",
+          "DownstreamPathTemplate": "/api/projetos/{pagina}/{resultadoPorPagina}",
           "DownstreamScheme": "http",
           "DownstreamHostAndPorts": [
             {
@@ -13,7 +13,7 @@
           "UpstreamHttpMethod": [ "Get", "Options" ]
       },
       {
-        "DownstreamPathTemplate" : "/api/Projeto/projeto/{id}",
+        "DownstreamPathTemplate" : "/api/projeto/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
@@ -25,7 +25,7 @@
         "UpstreamHttpMethod" : ["Get", "Options" ]
       },
       {
-        "DownstreamPathTemplate" : "/api/Projeto/Create",
+        "DownstreamPathTemplate" : "/api/Create",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
@@ -38,7 +38,7 @@
       },
 
       {
-        "DownstreamPathTemplate" : "/api/Projeto/Update/{id}",
+        "DownstreamPathTemplate" : "/api/update/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
@@ -50,7 +50,7 @@
         "UpstreamHttpMethod" : ["Put", "Options" ]
       },
       {
-        "DownstreamPathTemplate" : "/api/Projeto/delete/{id}",
+        "DownstreamPathTemplate" : "/api/delete/{id}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
@@ -60,6 +60,30 @@
         ],
         "UpstreamPathTemplate" : "/projeto/delete/{id}",
         "UpstreamHttpMethod" : ["Delete", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/pesquisar/{pagina}/{resultadoPorPagina}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "icarusprojetos",
+            "Port" : 5086
+          }
+        ],
+        "UpstreamPathTemplate" : "/projeto/pesquisar/{pagina}/{resultadoPorPagina}",
+        "UpstreamHttpMethod" : ["Get", "Options" ]
+      },
+      {
+        "DownstreamPathTemplate" : "/api/pesquisar/status/{pagina}/{resultadoPorPagina}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host" : "icarusprojetos",
+            "Port" : 5086
+          }
+        ],
+        "UpstreamPathTemplate" : "/projeto/pesquisar/{pagina}/{resultadoPorPagina}",
+        "UpstreamHttpMethod" : ["Get", "Options" ]
       }
   ],
   "GlobalConfiguration": {
