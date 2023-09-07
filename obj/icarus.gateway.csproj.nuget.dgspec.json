@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj": {}
+    "C:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj": {}
   },
   "projects": {
-    "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj": {
+    "C:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj",
+        "projectUniqueName": "C:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj",
         "projectName": "icarus.gateway",
-        "projectPath": "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj",
+        "projectPath": "C:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj",
         "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\santo\\github\\icarus.gateway\\obj\\",
+        "outputPath": "C:\\Users\\santo\\github\\icarus.gateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
