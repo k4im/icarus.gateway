@@ -1,69 +1,82 @@
 {
-    "Routes": [
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Projeto/projetos/{pagina}/{resultadoPorPagina}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
         {
-            "DownstreamPathTemplate": "/api/Projeto/projetos/{pagina}/{resultadoPorPagina}",
-            "DownstreamScheme": "http",
-            "DownstreamHostAndPorts": [
-              {
-                "Host": "localhost",
-                "Port": 5086
-              }
-            ],
-            "UpstreamPathTemplate": "/projetos/{pagina}/{resultadoPorPagina}",
-            "UpstreamHttpMethod": [ "Get", "Options" ]
-        },
-        {
-          "DownstreamPathTemplate" : "/api/Projeto/projeto/{id}",
-          "DownstreamScheme": "http",
-          "DownstreamHostAndPorts": [
-            {
-              "Host" : "localhost",
-              "Port" : 5086
-            }
-          ],
-          "UpstreamPathTemplate" : "/projeto/{id}",
-          "UpstreamHttpMethod" : ["Get", "Options" ]
-        },
-        {
-          "DownstreamPathTemplate" : "/api/Projeto/Create",
-          "DownstreamScheme": "http",
-          "DownstreamHostAndPorts": [
-            {
-              "Host" : "localhost",
-              "Port" : 5086
-            }
-          ],
-          "UpstreamPathTemplate" : "/projeto/novo",
-          "UpstreamHttpMethod" : ["Post", "Options" ]
-        },
-
-        {
-          "DownstreamPathTemplate" : "/api/Projeto/Update/{id}",
-          "DownstreamScheme": "http",
-          "DownstreamHostAndPorts": [
-            {
-              "Host" : "localhost",
-              "Port" : 5086
-            }
-          ],
-          "UpstreamPathTemplate" : "/projeto/atualizar/{id}",
-          "UpstreamHttpMethod" : ["Put", "Options" ]
-        },
-        {
-          "DownstreamPathTemplate" : "/api/Projeto/delete/{id}",
-          "DownstreamScheme": "http",
-          "DownstreamHostAndPorts": [
-            {
-              "Host" : "localhost",
-              "Port" : 5086
-            }
-          ],
-          "UpstreamPathTemplate" : "/projeto/delete/{id}",
-          "UpstreamHttpMethod" : ["Delete", "Options" ]
+          "Host": "localhost",
+          "Port": 5086
         }
-    ],
-    "GlobalConfiguration": {
-      "RequestIdKey": "X-CorrelationHeader"
+      ],
+      "UpstreamPathTemplate": "/projetos/{pagina}/{resultadoPorPagina}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projeto/projeto/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/projeto/{id}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projeto/Create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/projeto/novo",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projeto/Update/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/projeto/atualizar/{id}",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Projeto/delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/projeto/delete/{id}",
+      "UpstreamHttpMethod": [
+        "Delete",
+        "Options"
+      ]
     }
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "X-CorrelationID"
+  }
 }
-
