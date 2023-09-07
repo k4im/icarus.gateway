@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/santo/github/icarus.gateway/icarus.gateway.csproj": {}
+    "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/santo/github/icarus.gateway/icarus.gateway.csproj": {
+    "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/santo/github/icarus.gateway/icarus.gateway.csproj",
+        "projectUniqueName": "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj",
         "projectName": "icarus.gateway",
-        "projectPath": "/mnt/c/Users/santo/github/icarus.gateway/icarus.gateway.csproj",
-        "packagesPath": "/home/k4im/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/santo/github/icarus.gateway/obj/",
+        "projectPath": "c:\\Users\\santo\\github\\icarus.gateway\\icarus.gateway.csproj",
+        "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\santo\\github\\icarus.gateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/k4im/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
