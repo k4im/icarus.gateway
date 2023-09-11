@@ -16,6 +16,21 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/produtosEmEstoque",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "projetos",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/projetos/produtosEmEstoque",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/projeto/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
