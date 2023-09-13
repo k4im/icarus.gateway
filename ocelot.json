@@ -91,7 +91,7 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}",
+      "DownstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}?{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -99,14 +99,14 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/projeto/pesquisar/{pagina}/{resultadoPorPagina}",
+      "UpstreamPathTemplate": "/projeto/pesquisar/{pagina}/{resultadoPorPagina}{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}",
+      "DownstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}?{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -114,7 +114,7 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/projeto/pesquisar/status/{pagina}/{resultadoPorPagina}",
+      "UpstreamPathTemplate": "/projeto/pesquisar/status/{pagina}/{resultadoPorPagina}{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
