@@ -8,10 +8,10 @@ var app = builder.Build();
 app.UseOcelot().Wait();
 app.MapGet("/", () => "Ocelot esta funcionando");
 app.MapHealthChecks("/health");
-app.UseCors(
-    x => {
-        x.AllowAnyOrigin();
-        x.AllowAnyMethod();
-    }
-);
+app.UseCors(c =>
+{
+    c.AllowAnyOrigin();
+    c.AllowAnyHeader();
+    c.AllowAnyMethod();
+});
 app.Run();
