@@ -91,15 +91,15 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}?{everthing}",
+      "DownstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "projetos",
+          "Host": "localhost",
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamPathTemplate": "/projeto/pesquisar/nome/{pagina}/{resultadoPorPagina}{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
@@ -110,7 +110,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "projetos",
+          "Host": "localhost",
           "Port": 5086
         }
       ],
