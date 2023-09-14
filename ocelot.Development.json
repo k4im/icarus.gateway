@@ -91,7 +91,7 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}?{everthing}",
+      "DownstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -99,7 +99,7 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamPathTemplate": "/projeto/pesquisar/nome/{pagina}/{resultadoPorPagina}{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
