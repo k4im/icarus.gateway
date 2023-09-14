@@ -1,11 +1,11 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Projeto/projetos/{pagina}/{resultadoPorPagina}",
+      "DownstreamPathTemplate": "/api/projetos/{pagina}/{resultadoPorPagina}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "projetos",
           "Port": 5086
         }
       ],
@@ -16,11 +16,26 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/Projeto/projeto/{id}",
+      "DownstreamPathTemplate": "/api/produtosEmEstoque",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "projetos",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/projetos/produtosEmEstoque",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/projeto/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "projetos",
           "Port": 5086
         }
       ],
@@ -31,11 +46,11 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/Projeto/Create",
+      "DownstreamPathTemplate": "/api/Create",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "projetos",
           "Port": 5086
         }
       ],
@@ -46,11 +61,11 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/Projeto/Update/{id}",
+      "DownstreamPathTemplate": "/api/update/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "projetos",
           "Port": 5086
         }
       ],
@@ -61,7 +76,22 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/Projeto/delete/{id}",
+      "DownstreamPathTemplate": "/api/delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "projetos",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/projeto/delete/{id}",
+      "UpstreamHttpMethod": [
+        "Delete",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}?{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -69,9 +99,189 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/projeto/delete/{id}",
+      "UpstreamPathTemplate": "/api/pesquisar/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}?{everthing}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5086
+        }
+      ],
+      "UpstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/produtos/{pagina}/{resultadoPorPagina}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/{pagina}/{resultadoPorPagina}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/produtos/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/{id}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/produtos/novo_produto",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/novo",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/produtos/produto_atualizar/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/atualizar/{id}",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/produtos/produto_delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/delete/{id}",
       "UpstreamHttpMethod": [
         "Delete",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/{pagina}/{resultado}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/usuarios/{pagina}/{resultado}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/novo",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/usuarios/novo",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/desativar/{chave}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/desativar/{chave}",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/login",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/reativar/{chave}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/reativar/{chave}",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/logout",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/logout",
+      "UpstreamHttpMethod": [
+        "Post",
         "Options"
       ]
     }
