@@ -99,7 +99,7 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
@@ -114,7 +114,7 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}?{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
