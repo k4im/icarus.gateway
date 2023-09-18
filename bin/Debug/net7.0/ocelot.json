@@ -99,7 +99,7 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
@@ -114,7 +114,7 @@
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}?{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
@@ -250,6 +250,21 @@
         }
       ],
       "UpstreamPathTemplate": "/auth/login",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/refreshtoken?{chave}?{Token}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/refreshtoken?{chave}?{Token}",
       "UpstreamHttpMethod": [
         "Post",
         "Options"

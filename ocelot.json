@@ -256,7 +256,7 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/usuarios/refreshtoken?{everthing}?{everthing}",
+      "DownstreamPathTemplate": "/api/usuarios/refreshtoken?{chave}?{Token}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -264,7 +264,7 @@
           "Port": 5112
         }
       ],
-      "UpstreamPathTemplate": "/auth/refreshtoken?{everthing}?{everthing}",
+      "UpstreamPathTemplate": "/auth/refreshtoken?{chave}?{Token}",
       "UpstreamHttpMethod": [
         "Post",
         "Options"
