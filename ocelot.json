@@ -256,6 +256,21 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/usuarios/refreshtoken?{everthing}?{everthing}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/refreshtoken?{everthing}?{everthing}",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/usuarios/reativar/{chave}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
