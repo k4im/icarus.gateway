@@ -121,7 +121,7 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/produtos/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
+      "DownstreamPathTemplate": "/api/produtos/pesquisar/nome/{pagina}/{resultadoPorPagina}{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -129,7 +129,7 @@
           "Port": 5139
         }
       ],
-      "UpstreamPathTemplate": "/produtos/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
+      "UpstreamPathTemplate": "/produtos/pesquisar/nome/{pagina}/{resultadoPorPagina}{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
