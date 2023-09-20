@@ -121,7 +121,7 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/produtos/pesquisar/nome/{pagina}/{resultado}?{everthing}",
+      "DownstreamPathTemplate": "/api/produtos/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
