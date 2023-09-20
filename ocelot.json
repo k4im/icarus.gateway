@@ -121,6 +121,21 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/produtos/pesquisar/nome/{pagina}/{resultado}?{everthing}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/produtos/{pagina}/{resultadoPorPagina}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
