@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hZU3BV3yHJrC6zXvl4aZ6l/ULrxos8mvKQYsImea215HKV9gwfGoilgD/izrbcJLLG6Hu61XDlLH6WIGYCipTg==",
+  "dgSpecHash": "nwlEW0EF5uLBYaURI0gKZXu/7TYT76LPU5KovoRmt5MDr287nnz4mmIgkcEBIl7AMbP42dYMDGVaVgZ8QgtfaQ==",
   "success": true,
-  "projectFilePath": "/home/k4im/github/icarus/icarus.gateway/icarus.gateway.csproj",
+  "projectFilePath": "/home/k4im/github/icarus/backend/icarus.gateway/icarus.gateway.csproj",
   "expectedPackageFiles": [
     "/home/k4im/.nuget/packages/fluentvalidation/11.5.2/fluentvalidation.11.5.2.nupkg.sha512",
     "/home/k4im/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.9/microsoft.aspnetcore.authentication.jwtbearer.7.0.9.nupkg.sha512",

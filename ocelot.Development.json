@@ -95,11 +95,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "projetos",
           "Port": 5086
         }
       ],
-      "UpstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}{everthing}",
+      "UpstreamPathTemplate": "/api/pesquisar/nome/{pagina}/{resultadoPorPagina}?{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
@@ -110,11 +110,26 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "projetos",
           "Port": 5086
         }
       ],
       "UpstreamPathTemplate": "/api/pesquisar/status/{pagina}/{resultadoPorPagina}?{everthing}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/produtos/pesquisar/nome/{pagina}/{resultado}{everthing}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/pesquisar/nome/{pagina}/{resultado}{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
@@ -250,6 +265,21 @@
         }
       ],
       "UpstreamPathTemplate": "/auth/login",
+      "UpstreamHttpMethod": [
+        "Post",
+        "Options"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuarios/refreshtoken?{everthing}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "autenticacao",
+          "Port": 5112
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/refreshtoken?{everthing}",
       "UpstreamHttpMethod": [
         "Post",
         "Options"

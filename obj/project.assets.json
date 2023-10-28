@@ -1244,11 +1244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/k4im/github/icarus/icarus.gateway/icarus.gateway.csproj",
+      "projectUniqueName": "/home/k4im/github/icarus/backend/icarus.gateway/icarus.gateway.csproj",
       "projectName": "icarus.gateway",
-      "projectPath": "/home/k4im/github/icarus/icarus.gateway/icarus.gateway.csproj",
+      "projectPath": "/home/k4im/github/icarus/backend/icarus.gateway/icarus.gateway.csproj",
       "packagesPath": "/home/k4im/.nuget/packages/",
-      "outputPath": "/home/k4im/github/icarus/icarus.gateway/obj/",
+      "outputPath": "/home/k4im/github/icarus/backend/icarus.gateway/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/k4im/.nuget/NuGet/NuGet.Config"
