@@ -121,6 +121,21 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/produtos/pesquisar/nome/{pagina}/{resultado}{everthing}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 5139
+        }
+      ],
+      "UpstreamPathTemplate": "/produtos/pesquisar/nome/{pagina}/{resultado}{everthing}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Options"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/produtos/{pagina}/{resultadoPorPagina}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -256,7 +271,7 @@
       ]
     },
     {
-      "DownstreamPathTemplate": "/api/usuarios/refreshtoken?{chave}?{Token}",
+      "DownstreamPathTemplate": "/api/usuarios/refreshtoken?{everthing}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -264,7 +279,7 @@
           "Port": 5112
         }
       ],
-      "UpstreamPathTemplate": "/auth/refreshtoken?{chave}?{Token}",
+      "UpstreamPathTemplate": "/auth/refreshtoken?{everthing}",
       "UpstreamHttpMethod": [
         "Post",
         "Options"

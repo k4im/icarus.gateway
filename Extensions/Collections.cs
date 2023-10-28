@@ -4,6 +4,15 @@ public static class Collections
     /*Realizado adição de configuração de ocelot para gateway*/
     public static IServiceCollection AddOcelotConfigurations(this IServiceCollection services, IConfiguration config)
     {
+        
+        if(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development") {
+            var configDev = new ConfigurationBuilder()
+            .AddJsonFile("ocelot.Development.json")
+            .Build();
+            services.AddOcelot(configDev);
+            return services;
+        }
+
         var configuration = new ConfigurationBuilder()
         .AddJsonFile($"ocelot.json")
         .Build();
