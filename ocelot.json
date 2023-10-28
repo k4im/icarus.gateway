@@ -129,7 +129,7 @@
           "Port": 5139
         }
       ],
-      "UpstreamPathTemplate": "/produtos/pesquisar/nome/{pagina}/{resultado}?{everthing}",
+      "UpstreamPathTemplate": "/produtos/pesquisar/nome/{pagina}/{resultado}{everthing}",
       "UpstreamHttpMethod": [
         "Get",
         "Options"
